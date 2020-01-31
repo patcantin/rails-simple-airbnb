@@ -1,0 +1,9 @@
+<h1>All Flats(<%= @flats.count %>)</h1>
+
+ <div class="row">
+    <% @flats.each do |r| %>
+      <div class="col-xs-12 col-md-3">
+        <%= render "card", flat: r %>
+      </div>
+    <% end %>
+  </div>
